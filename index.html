@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=es>
+
+<head>
+  <meta charset=UTF-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="./src/js/index.js" defer></script>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Task4-Camiseta</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="customization-panel">
+      <div class="title-section">
+        <h2>Title</h2>
+        <input type="text" placeholder="Enter title">
+      </div>
+      <div class="range">
+        <input type="range" list="items" min="1" max="5" value="1">
+        <input type="range" list="items" min="1" max="5" value="1" class="height-movement">
+      </div>
+      <div class="color-section">
+        <h2>Color</h2>
+        <div class="color-option">
+          <input type="radio" id="black" name="color" checked>
+          <label for="black">Black</label>
+        </div>
+        <div class="color-option">
+          <input type="radio" id="white" name="color">
+          <label for="white">White</label>
+        </div>
+      </div>
+
+      <div class="images-section">
+        <h2>Images (drag to t-shirt):</h2>
+        <div class="image-grid">
+          <img src="./src/images/chamber.png" alt="Chamber" class="character-image">
+          <img src="./src/images/cipher.png" alt="Cipher" class="character-image">
+          <img src="./src/images/jett.png" alt="Jett" class="character-image">
+          <img src="./src/images/killjoy.png" alt="Kill Joy" class="character-image">
+          <img src="./src/images/phoenix.png" alt="Phoenix" class="character-image">
+          <img src="./src/images/raze.png" alt="Raze" class="character-image">
+          <img src="./src/images/reyna.png" alt="Reyna" class="character-image">
+          <img src="./src/images/sage.png" alt="Sage" class="character-image">
+          <img src="./src/images/skye.png" alt="Skye" class="character-image">
+          <img src="./src/images/sova.png" alt="Sova" class="character-image">
+          <img src="./src/images/viper.png" alt="Viper" class="character-image">
+          <img src="./src/images/yoru.png" alt="Yoru" class="character-image">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="preview-panel">
+      <img src="./src/images/camisetaNegra.png" alt="T-shirt Preview" class="tshirt-preview">
+      <img src="./src/images/camisetaBlanca.png" alt="T-shirt Preview" class="tshirt-preview-white">
+
+    </div>
+  </div>
+
+  <footer>Task4-Camiseta EnglishWeb - AlvaroFuentesNev © 2024</footer>
+</body>
+
+</html>

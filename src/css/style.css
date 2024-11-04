@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #000000;
+  --accent-color: #5DFEEE;
+  --black-color: #000000;
+  --white-color: #FFFFFF;
+  --margin-bottom: 12px;
+  --heightContainer: 630px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  height: var(--heightContainer);
+  gap: 20px;
+  min-width: 480px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.customization-panel {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.range {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.preview-panel {
+  background: #fff9f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-section {
+  margin-bottom: 20px;
+}
+
+.title-section input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.color-section {
+  margin-bottom: 20px;
+}
+
+.color-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.color-option input[type="radio"] {
+  margin-right: 8px;
+}
+
+.images-section {
+  margin-bottom: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  background: white;
+}
+
+.character-image {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  background: transparent;
+  padding: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.character-image:hover {
+  border-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.tshirt-preview {
+  max-width: 500px;
+  display: block;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.image-grid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.image-grid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.image-grid::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.image-grid::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.mirrored-image {
+  max-width: 45px;
+  top: 180px;
+  right: 150px;
+  transform: scaleX(-1);
+}
